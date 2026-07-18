@@ -1,0 +1,9 @@
+.home-page {
+  .hero {
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0 0 50px 50px;
+  }
+}
