@@ -1,0 +1,22 @@
+.custom-navbar {
+  background-color: $primary-color !important;
+  .navbar-brand {
+    font-weight: bold;
+    color: white !important;
+  }
+  .nav-link {
+    color: rgba(255,255,255,0.8) !important;
+    &:hover {
+      color: white !important;
+    }
+  }
+  .offcanvas {
+    background-color: $primary-color;
+    .offcanvas-title {
+      color: white;
+    }
+    .btn-close {
+      filter: invert(1);
+    }
+  }
+}
