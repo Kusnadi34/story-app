@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .custom-navbar {
   background-color: $primary-color !important;
   .navbar-brand {
