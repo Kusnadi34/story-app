@@ -38,3 +38,52 @@ Story-App
 ---
 
 ## 📂 Struktur Proyek
+story-app/
+├── .github/
+│ └── workflows/
+│ └── deploy.yml # CI/CD untuk deploy ke GitHub Pages
+├── src/
+│ ├── data/
+│ │ └── story-dummy.json # Data dummy cerita
+│ ├── js/
+│ │ ├── components/ # Web Components (Lit)
+│ │ │ ├── app-header.js
+│ │ │ ├── app-footer.js
+│ │ │ ├── story-list.js
+│ │ │ ├── add-story-form.js
+│ │ │ └── profile-card.js
+│ │ └── index.js # Entry point JavaScript
+│ ├── public/
+│ │ └── favicon.png
+│ ├── sass/
+│ │ ├── abstracts/ # Variabel, Mixins
+│ │ ├── base/ # Reset CSS
+│ │ ├── components/ # Style Komponen
+│ │ ├── layout/ # Grid, Footer
+│ │ ├── pages/ # Style per halaman(Home, Add, Profile)
+│ │ └── main.scss # Entry point SCSS
+│ └── views/
+│ └── index.html # Template HTML
+├── webpack.common.js
+├── webpack.dev.js
+├── webpack.prod.js
+├── package.json
+└── README.md
+
+
+---
+
+## 🚀 Cara Menjalankan di Lokal (Untuk Developer)
+
+> **Catatan**: Jika Anda menggunakan HP Android 5.0, Anda tidak perlu menjalankan ini. Cukup buka Live Demo di atas. Kode ini diperuntukkan untuk pengembang yang memiliki PC/Laptop.
+
+### Prasyarat
+- Node.js (versi 18 atau lebih baru)
+- npm atau yarn
+
+### Instalasi & Menjalankan Development Server
+
+1. Clone repository:
+   ```bash
+   git clone https://github.com/Kusnadi34/story-app.git
+   cd story-app
