@@ -1,3 +1,5 @@
+@use '../abstracts/variables' as *;
+
 .home-page {
   .hero {
     background: linear-gradient(135deg, $primary-color, $secondary-color);
