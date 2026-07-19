@@ -107,9 +107,11 @@ npm run build
 Hasil build akan tersimpan di folder /dist.
 
 🔒 Lisensi
+
 Proyek ini dilisensikan di bawah MIT License – bebas digunakan, dimodifikasi, dan didistribusikan.
 
 🙏 Kontribusi
+
 Karena ini adalah proyek submission/tugas, pull request tidak diperlukan saat ini. Namun, jika Anda menemukan bug atau memiliki saran, silakan buka Issue di repository ini.
 
 Dibuat dengan ❤️ oleh Kusnadi34
