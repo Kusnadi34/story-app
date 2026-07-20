@@ -1,30 +1,51 @@
 @use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
 
-.story-card {
+.card {
   border: none;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  border-radius: $border-radius-lg;
+  background: #ffffff;
+  box-shadow: $box-shadow-sm;
+  transition: all 0.25s ease;
+  border-left: 8px solid $secondary; // Garis samping seperti pembatas buku
+  height: 100%;
   overflow: hidden;
-  @include card-hover;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $box-shadow;
+  }
 
   .card-img-top {
+    border-top-left-radius: $border-radius-lg;
+    border-top-right-radius: $border-radius-lg;
     height: 200px;
     object-fit: cover;
   }
 
   .card-body {
-    padding: 1.25rem;
-    .card-title {
-      font-weight: 600;
-      color: $primary-color;
-    }
-    .card-text {
-      font-size: 0.95rem;
-    }
-    .story-date {
-      font-size: 0.8rem;
-      color: #6c757d;
-    }
+    padding: 20px;
+  }
+
+  .card-title {
+    font-family: $headings-font-family;
+    font-weight: 700;
+    color: $primary;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .card-text {
+    color: $body-color;
+    opacity: 0.85;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .card-footer {
+    background: transparent;
+    border-top: 1px dashed rgba(69, 26, 3, 0.1);
+    color: #78716c;
+    font-size: 0.85rem;
+    padding: 12px 20px;
   }
 }
