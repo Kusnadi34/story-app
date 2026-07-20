@@ -1,22 +1,74 @@
 @use '../abstracts/variables' as *;
 
 .profile-page {
-  .profile-card {
-    text-align: center;
-    padding: 2rem;
-    background: white;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
-    .profile-avatar {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
+  padding: 20px 0;
+}
+
+.profile-container {
+  background: #ffffff;
+  padding: 40px 28px;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow-sm;
+  border: 1px solid rgba(181, 83, 9, 0.08);
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+
+  .profile-avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid $secondary;
+    box-shadow: $box-shadow-sm;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-family: $headings-font-family;
+    font-weight: 900;
+    color: $primary;
+    margin-bottom: 4px;
+  }
+
+  .profile-title {
+    color: $secondary;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+  }
+
+  .profile-bio {
+    color: $body-color;
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .profile-detail {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+    span {
+      background: #fef3c7;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      color: $dark;
     }
-    .profile-name {
-      font-size: 1.8rem;
-      font-weight: 600;
-    }
+  }
+
+  .skill-badge {
+    display: inline-block;
+    background: $primary;
+    color: #ffffff;
+    padding: 4px 16px;
+    border-radius: 50px;
+    margin: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
   }
 }
