@@ -1,12 +1,20 @@
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
+// 1. Abstracts
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+
+// 2. Base
 @use 'base/reset';
-@use 'components/card';
+
+// 3. Layout
+@use 'layout/grid';
+@use 'layout/footer';
+
+// 4. Components
 @use 'components/navbar';
+@use 'components/card';
 @use 'components/form';
 
-@use 'layout/footer';
-@use 'layout/grid';
+// 5. Pages
 @use 'pages/home';
 @use 'pages/add';
 @use 'pages/profile';
